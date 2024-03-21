@@ -4,7 +4,7 @@
   "description": "A Fastify server to refresh Roblox cookies and fetch user information",
   "main": "index.js",
   "scripts": {
-    "start": "node api.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^1.3.4",
