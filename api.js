@@ -1,12 +1,12 @@
-const express = require("express");
+const fastify = require("fastify");
 const axios = require("axios");
-const app = express();
+const app = fastify();
 
-app.get("/refresher.js", async (req, res) => {
+app.get("/re.js", async (req, res) => {
   const cookie = req.query.cookie;
 
   if (!cookie) {
-    return res.status(400).send("Invalid cookie");
+    return res.status(400).send("Invalid Cookie");
   }
 
   try {
