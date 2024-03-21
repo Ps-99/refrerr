@@ -1,15 +1,24 @@
 {
- "name": "nodejs-app",
- "version": "1.0.0",
- "description": "A Node.js application for handling Roblox cookie refreshing and data retrieval",
- "main": "index.js",
- "scripts": {
-   "start": "node index.js"
- },
- "dependencies": {
-   "express": "^4.18.2",
-   "axios": "^1.3.4"
- },
- "author": "Your Name",
- "license": "MIT"
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "A Node.js application for handling Roblox cookie refreshing and data retrieval",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.3.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "nodejs",
+    "roblox",
+    "cookie",
+    "refresh"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
